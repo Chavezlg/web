@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TecNova Solutions</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | TecNova Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 <header class="bg-dark text-white">
@@ -31,48 +32,30 @@
 </header>
 
 
-  <section class="bg-info text-center text-white py-5">
-    <div class="container">
-      <h1>Innovación que impulsa tu negocio</h1>
-      <p class="lead">Desarrollamos soluciones tecnológicas a medida para PYMES y emprendedores en Latinoamérica.</p>
-    </div>
-  </section>
-
   <section class="container py-5">
-    <h2 class="text-center mb-4">Nuestros Servicios</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Desarrollo Web</h5>
-            <p class="card-text">Creamos páginas web modernas, tiendas online y sistemas adaptados a tus necesidades.</p>
-            <a href="contacto.html" class="btn btn-primary btn-block">Solicitar Servicio</a>
+    <h2 class="text-center mb-4">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
           </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Automatización Empresarial</h5>
-            <p class="card-text">Diseñamos sistemas que automatizan procesos repetitivos para aumentar la eficiencia.</p>
-            <a href="contacto.html" class="btn btn-primary btn-block">Solicitar Servicio</a>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
           </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Soluciones con IA</h5>
-            <p class="card-text">Desarrollamos chatbots, análisis predictivo y herramientas inteligentes para tu negocio.</p>
-            <a href="contacto.html" class="btn btn-primary btn-block">Solicitar Servicio</a>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
           </div>
-        </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+        <p class="mt-4 text-center">O escríbenos directamente a: <strong>contacto@tecnovasolutions.com</strong></p>
       </div>
     </div>
   </section>
-  
+
       <!-- Chatbot Flotante con Bootstrap -->
 <div class="d-flex justify-content-end px-3" style="margin-bottom: -30px;">
   <div style="position: relative;">
@@ -103,6 +86,7 @@
     <p>&copy; 2025 TecNova Solutions - Todos los derechos reservados.</p>
   </footer>
 
+<script src="js/contacto.js"></script>
 <script>
   const chatbotToggle = document.getElementById('chatbotToggle');
   const chatbotBox = document.getElementById('chatbotBox');
@@ -130,11 +114,5 @@
   }
 </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
 </body>
 </html>
-
-
